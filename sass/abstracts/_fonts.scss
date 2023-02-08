@@ -1,0 +1,54 @@
+@use '../abstracts/colors' as *;
+
+.font-barlow {
+  font-family: 'Barlow', sans-serif;
+}
+
+.h-64px {
+  font-size: 64px;
+  font-style: normal;
+  line-height: 120%;
+}
+
+.h-44px {
+  font-size: 44px;
+  font-style: normal;
+  line-height: 130%;
+}
+
+.h-40px {
+  font-size: 40px;
+  font-style: normal;
+  line-height: 130%;
+}
+
+// TODO Revisar con Dani
+.h-18px {
+  font-size: 18px;
+  font-style: normal;
+  line-height: 150%;
+}
+
+.h-18px {
+  font-size: 18px;
+  font-style: normal;
+  line-height: 150%;
+}
+
+.h-16px {
+  font-size: 16px;
+  font-style: normal;
+  line-height: 20px;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-700 {
+  font-weight: 700;
+}

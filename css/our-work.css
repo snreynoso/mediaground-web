@@ -1,0 +1,228 @@
+.tx-dark {
+  color: #232326;
+}
+
+.tx-light {
+  color: #FFFFFF;
+}
+
+.tx-purpple-01 {
+  color: #302B76;
+}
+
+.font-barlow {
+  font-family: "Barlow", sans-serif;
+}
+
+.h-64px {
+  font-size: 64px;
+  font-style: normal;
+  line-height: 120%;
+}
+
+.h-44px {
+  font-size: 44px;
+  font-style: normal;
+  line-height: 130%;
+}
+
+.h-40px {
+  font-size: 40px;
+  font-style: normal;
+  line-height: 130%;
+}
+
+.h-18px {
+  font-size: 18px;
+  font-style: normal;
+  line-height: 150%;
+}
+
+.h-18px {
+  font-size: 18px;
+  font-style: normal;
+  line-height: 150%;
+}
+
+.h-16px {
+  font-size: 16px;
+  font-style: normal;
+  line-height: 20px;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.btn-primary {
+  background-color: #302B76;
+  color: #FFFFFF;
+  padding: 27px 37px !important;
+  border-radius: 94px;
+  font-family: "Inter", sans-serif;
+  cursor: pointer;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #232326;
+  padding: 27px 37px !important;
+  border-radius: 94px;
+  font-family: "Inter", sans-serif;
+  cursor: pointer;
+}
+
+.btn-dark {
+  background-color: #232326;
+  color: #FFFFFF;
+  padding: 22px 25px !important;
+  border-radius: 50%;
+  font-family: "Inter", sans-serif;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #302B76;
+  padding: 30px 80px;
+  border-radius: 45px 45px 0px 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-social-icons {
+  width: 120px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer-social-icons a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+}
+.footer-social-icons .icon-tweeter {
+  background-image: url("../../assets/icons/icon-twitter.png");
+}
+.footer-social-icons .icon-instagram {
+  background-image: url("../../assets/icons/icon-insta.png");
+}
+.footer-social-icons .icon-linkedin {
+  background-image: url("../../assets/icons/icon-linkedin.png");
+}
+.footer-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 64px;
+}
+.footer-menu a {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #FFFFFF;
+}
+
+.navbar {
+  padding: 60px 55px 60px 70px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .logo {
+  width: 351px;
+}
+.navbar .logo a {
+  font-family: "Barlow", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+}
+.navbar-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.navbar-menu a:nth-child(-n+3) {
+  padding: 12px 16px;
+  border-bottom: transparent 1px solid;
+  color: #232326;
+  font-size: 16px;
+  font-weight: 700;
+}
+.navbar-menu a:nth-child(-n+3).selected {
+  box-shadow: inset 0px -4px 0px #5137D7 !important;
+}
+.navbar-menu a:nth-child(-n+3):hover {
+  box-shadow: inset 0px -4px 0px #5137D7;
+}
+.navbar-menu a:nth-child(4) {
+  margin-left: 47px;
+}
+
+.single-card {
+  padding: 46px 36px 0px 36px;
+  position: relative;
+  width: 340px;
+  height: 304px;
+  box-shadow: 0px 1px 8px rgba(69, 69, 69, 0.2);
+  border-radius: 16px;
+}
+.single-card h1 {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  color: #302B76;
+}
+.single-card h2 {
+  padding: 14px 0px;
+  font-family: "Barlow", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 20px;
+  color: #232326;
+}
+.single-card p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #232326;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+}
+
+main {
+  max-width: 1440px;
+  margin: auto;
+}
+
+.section-intro {
+  background-color: red;
+}
+
+/*# sourceMappingURL=our-work.css.map */

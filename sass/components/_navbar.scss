@@ -1,0 +1,48 @@
+@use '../abstracts/colors' as *;
+
+.navbar {
+  padding: 60px 55px 60px 70px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  .logo {
+    width: 351px;
+
+    a{
+      font-family: 'Barlow', sans-serif;
+      font-size: 40px;
+      font-weight: 700;
+    }
+  }
+
+  &-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+
+    a:nth-child(-n + 3) {
+      padding: 12px 16px;
+      border-bottom: transparent 1px solid;
+      color: $TX_DARK_COLOR;
+      font-size: 16px;
+      font-weight: 700;
+
+      &.selected {
+        box-shadow: inset 0px -4px 0px $MENU_UNDERLINE_COLOR !important;
+      }
+    }
+
+    a:nth-child(-n + 3):hover {
+        box-shadow: inset 0px -4px 0px $MENU_UNDERLINE_COLOR;
+    }
+
+    a:nth-child(4) {
+      margin-left: 47px;
+    }
+
+  }
+}

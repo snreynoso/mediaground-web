@@ -1,0 +1,56 @@
+@use '../abstracts/colors' as *;
+
+.footer {
+  background-color: $PRIMARY_COLOR;
+  padding: 30px 80px;
+  border-radius: 45px 45px 0px 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  &-social-icons {
+    width: 120px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    a {
+      display: block;
+      width: 30px;
+      height: 30px;
+      background-size: contain;
+    }
+
+    .icon-tweeter {
+      background-image: url('../../assets/icons/icon-twitter.png');
+    }
+
+    .icon-instagram {
+      background-image: url('../../assets/icons/icon-insta.png');
+    }
+
+    .icon-linkedin {
+      background-image: url('../../assets/icons/icon-linkedin.png');
+    }
+  }
+
+  &-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 64px;
+
+    a {
+      font-family: 'Inter', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 150%;
+
+      color: $TX_LIGHT_COLOR;
+    }
+  }
+}

@@ -8,12 +8,26 @@
   justify-content: space-between;
 
   .logo {
-    width: 351px;
+    width: 320px;
 
-    a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    &-mediaground {
+      display: block;
+      width: 45px;
+      height: 45px;
+
+      background-image: url('../../assets/logos/logo-mediaground.png');
+      background-size: contain;
+    }
+
+    a {
+      display: block;
       font-family: 'Barlow', sans-serif;
       font-size: 40px;
-      font-weight: 700;
+      font-weight: 700; 
     }
   }
 
@@ -37,12 +51,11 @@
     }
 
     a:nth-child(-n + 3):hover {
-        box-shadow: inset 0px -4px 0px $MENU_UNDERLINE_COLOR;
+      box-shadow: inset 0px -4px 0px $MENU_UNDERLINE_COLOR;
     }
 
     a:nth-child(4) {
       margin-left: 47px;
     }
-
   }
 }

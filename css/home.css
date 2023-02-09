@@ -90,6 +90,8 @@
 }
 
 .footer {
+  max-width: 1440px;
+  margin: auto;
   background-color: #302B76;
   padding: 30px 80px;
   border-radius: 45px 45px 0px 0px;
@@ -143,9 +145,20 @@
   justify-content: space-between;
 }
 .navbar .logo {
-  width: 351px;
+  width: 320px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .logo-mediaground {
+  display: block;
+  width: 45px;
+  height: 45px;
+  background-image: url("../../assets/logos/logo-mediaground.png");
+  background-size: contain;
 }
 .navbar .logo a {
+  display: block;
   font-family: "Barlow", sans-serif;
   font-size: 40px;
   font-weight: 700;
@@ -208,6 +221,55 @@
   color: #232326;
 }
 
+.testimonial-card {
+  width: 757px;
+  height: 238px;
+  padding: 40px;
+  box-shadow: 0px 1px 8px rgba(110, 110, 110, 0.1);
+  border-radius: 16px;
+  gap: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.testimonial-card div {
+  height: 158px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.testimonial-card div h3 {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 20px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: #302B76;
+}
+.testimonial-card div h1 {
+  font-family: "Barlow", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 20px;
+  letter-spacing: 0.01px;
+}
+.testimonial-card div .testimonial-stars {
+  width: 97px;
+  height: 16px;
+  display: inline;
+}
+.testimonial-card div p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -216,47 +278,50 @@
 }
 
 main {
+  font-family: "Inter", sans-serif;
+  color: #232326;
+}
+main .section-intro {
   max-width: 1440px;
   margin: auto;
-  font-family: "Inter", sans-serif;
-}
-
-.section-intro {
   position: relative;
   padding: 32px 177px;
 }
-.section-intro-title {
+main .section-intro-title {
   position: relative;
   max-width: 1086px;
 }
-.section-intro-title h1 {
+main .section-intro-title h1 {
   font-family: "Barlow", sans-serif;
-  color: #232326;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 150%;
 }
-.section-intro-block {
+main .section-intro-block {
   position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.section-intro-block-btn-p {
+main .section-intro-block-btn-p {
   position: relative;
   height: 286px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.section-intro-block-btn-p .section-intro-block-p {
+main .section-intro-block-btn-p .section-intro-block-p {
   width: 559px;
-  height: 135px;
   padding-top: 38px;
+}
+main .section-intro-block-btn-p .section-intro-block-p p {
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: 150%;
-  color: #232326;
 }
-.section-intro-block-btn-p .section-intro-block-btn {
+main .section-intro-block-btn-p .section-intro-block-btn {
   position: relative;
   width: 350px;
   height: auto;
@@ -264,39 +329,44 @@ main {
   flex-direction: row;
   justify-content: space-between;
 }
-.section-intro-block-img {
+main .section-intro-block-img {
   position: relative;
   width: 600px;
   height: 330px;
 }
-.section-intro-block-img img {
+main .section-intro-block-img img {
   border-radius: 20px;
   box-shadow: 0px 1px 8px rgba(69, 69, 69, 0.2);
 }
-.section-intro-block-img .img-01 {
+main .section-intro-block-img .img-01 {
   position: absolute;
   bottom: 0;
   left: 0;
   z-index: 2;
 }
-.section-intro-block-img .img-02 {
+main .section-intro-block-img .img-02 {
   position: absolute;
   bottom: 0;
-  right: 0;
+  left: 222px;
   z-index: 1;
 }
-
-.section-holistic {
-  background-color: #F3F1FB;
-  position: relative;
-  padding: 36px 100px 0px 177px;
-  width: max-content;
+main .section-holistic-container {
+  width: 100%;
   height: 625px;
+  background-color: #F3F1FB;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .section-holistic-container .section-holistic {
+  padding: 16px 0px;
+  position: relative;
+  width: 1080px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.section-holistic-block {
+main .section-holistic-container .section-holistic-block {
   position: relative;
   height: 334px;
   width: 385px;
@@ -304,84 +374,83 @@ main {
   flex-direction: column;
   justify-content: space-between;
 }
-.section-holistic-block h1 {
+main .section-holistic-container .section-holistic-block h1 {
   font-family: "Barlow", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 44px;
   line-height: 120%;
-  color: #232326;
 }
-.section-holistic-block p {
+main .section-holistic-container .section-holistic-block p {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 150%;
-  color: #232326;
 }
-.section-holistic-block a {
+main .section-holistic-container .section-holistic-block a {
   width: fit-content;
 }
-.section-holistic-img {
-  position: relative;
-  padding: 16px;
+main .section-holistic-container .section-holistic-img {
+  position: absolute;
+  top: 152px;
+  left: 379px;
 }
-
-.section-client-carousel {
+main .section-client-carousel {
   position: relative;
   width: 100%;
+  overflow: hidden;
 }
-
-.section-fullservices {
+main .section-fullservices {
+  max-width: 1440px;
+  margin: auto;
   position: relative;
   padding: 0px 177px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.section-fullservices-img {
+main .section-fullservices-img {
   position: relative;
   width: 415px;
   height: 500px;
 }
-.section-fullservices-img img {
+main .section-fullservices-img img {
   box-shadow: 0px 1px 8px rgba(69, 69, 69, 0.2);
 }
-.section-fullservices-img .img-03 {
+main .section-fullservices-img .img-03 {
   position: absolute;
 }
-.section-fullservices-img .img-04 {
+main .section-fullservices-img .img-04 {
   position: absolute;
   bottom: 0;
   right: 0;
 }
-.section-fullservices-block {
+main .section-fullservices-block {
   width: 530px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: end;
 }
-.section-fullservices-block h1 {
+main .section-fullservices-block h1 {
   font-family: "Barlow", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 44px;
   line-height: 130%;
-  color: #232326;
 }
-.section-fullservices-block p {
+main .section-fullservices-block p {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 150%;
-  color: #232326;
   text-align: end;
 }
-
-.section-cards {
+main .section-cards {
+  max-width: 1440px;
+  margin: auto;
   position: relative;
   height: 516px;
   padding: 32px 177px;
@@ -389,23 +458,23 @@ main {
   flex-direction: column;
   justify-content: space-between;
 }
-.section-cards-title h1 {
+main .section-cards-title h1 {
   font-family: "Barlow", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 44px;
   line-height: 130%;
-  color: #232326;
   text-align: center;
 }
-.section-cards-group {
+main .section-cards-group {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   gap: 30px;
 }
-
-.section-letstalk {
+main .section-letstalk {
+  max-width: 1440px;
+  margin: auto;
   position: relative;
   position: relative;
   padding: 64px 177px;
@@ -413,19 +482,18 @@ main {
   flex-direction: column;
   align-items: center;
 }
-.section-letstalk div {
+main .section-letstalk div {
   width: 700px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.section-letstalk div h1 {
+main .section-letstalk div h1 {
   font-family: "Barlow", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 44px;
   line-height: 130%;
-  color: #232326;
 }
 
 /*# sourceMappingURL=home.css.map */

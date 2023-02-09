@@ -1,6 +1,9 @@
 @use '../abstracts/colors' as *;
 
 .footer {
+  max-width: 1440px;
+  margin: auto;
+
   background-color: $PRIMARY_COLOR;
   padding: 30px 80px;
   border-radius: 45px 45px 0px 0px;
@@ -11,11 +14,11 @@
 
   &-social-icons {
     width: 120px;
-    
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
+
     a {
       display: block;
       width: 30px;

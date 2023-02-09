@@ -6,14 +6,165 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: 'Inter', sans-serif;
 }
 
 main {
-  max-width: 1440px;
-  margin: auto;
-}
+  font-family: 'Inter', sans-serif;
+  color: $TX_DARK_COLOR;
 
-.section-intro {
-  background-color: red;
+  .section-ourprojects {
+    position: relative;
+    max-width: 1440px;
+    margin: auto;
+    padding: 32px 177px;
+
+    display: flex;
+    flex-direction: column;
+
+    &-title {
+      font-family: 'Barlow';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 64px;
+      line-height: 120%;
+    }
+
+    &-imgs {
+      align-self: center;
+      width: fit-content;
+      padding: 50px 0px;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      grid-template-rows: auto;
+      grid-template-areas: "ow1 ow2 ow3 ow4" "ow1 ow5 ow6 ow7";
+      gap: 24px;
+
+      .ow1 {
+        grid-area: ow1;
+      }
+
+      img {
+        place-self: center;
+      }
+    }
+  }
+
+  .section-select {
+    position: relative;
+    max-width: 1440px;
+    margin: auto;
+    padding: 32px 177px;
+
+    &-block {
+      height: 325px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+
+      &-dropdown {
+        font-family: 'Barlow';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 44px;
+        line-height: 130%;
+      }
+
+      &-btns {
+        width: 384px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        a {
+          padding: 12px 20px;
+          gap: 4.7px;
+          background: #f6f3ff;
+          box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3),
+            0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+          border-radius: 23.5191px;
+        }
+      }
+
+      &-p {
+        width: 862px;
+        text-align: center;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+      }
+    }
+
+    &-imgs {
+      align-self: center;
+      width: fit-content;
+      padding: 50px 0px;
+
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto;
+      grid-template-areas: 
+      "ow21 ow21 ow22" 
+      "ow21 ow21 ow23"
+      "ow24 ow24 ow24";
+      gap: 24px;
+
+      .ow21 {
+        grid-area: ow21;
+      }
+      
+      .ow22 {
+        grid-area: ow22;
+      }
+      
+      .ow23 {
+        grid-area: ow23;
+      }
+
+      .ow24 {
+        grid-area: ow24;
+      }
+
+      img {
+        place-self: center;
+      }
+    }
+  }
+
+  .section-testimonial{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-letstalk {
+    max-width: 1440px;
+    margin: auto;
+
+    position: relative;
+    position: relative;
+    padding: 64px 177px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    div {
+      width: 700px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      h1 {
+        font-family: 'Barlow', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 44px;
+        line-height: 130%;
+      }
+    }
+  }
 }

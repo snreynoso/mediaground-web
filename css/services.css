@@ -275,16 +275,119 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: "Inter", sans-serif;
 }
 
 main {
+  font-family: "Inter", sans-serif;
+  color: #232326;
+}
+main .section-agency {
   max-width: 1440px;
   margin: auto;
+  position: relative;
+  padding: 32px 177px;
 }
-
-.section-intro {
-  background-color: red;
+main .section-agency h1 {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 120%;
+}
+main .section-agency p {
+  width: 527px;
+  padding: 32px 0px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+}
+main .section-agency .block-branding {
+  padding: 40px 0;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+main .section-agency .block-branding-graph {
+  width: 380px;
+  height: 545px;
+  margin-right: 70px;
+}
+main .section-agency .block-branding-graph img:nth-child(2) {
+  position: absolute;
+  top: 360px;
+  left: 87px;
+}
+main .section-agency .block-branding-graph-right {
+  width: 380px;
+  height: 545px;
+  margin-right: 70px;
+}
+main .section-agency .block-branding-graph-right img:nth-child(1) {
+  position: relative;
+  z-index: 2;
+}
+main .section-agency .block-branding-graph-right img:nth-child(2) {
+  position: absolute;
+  top: 410px;
+  left: 540px;
+  z-index: 1;
+}
+main .section-agency .block-branding-content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+main .section-agency .block-branding-content h1 {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 130%;
+  color: #302B76;
+}
+main .section-agency .block-branding-content p {
+  padding: 26px 0 60px 0;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+}
+main .section-agency .block-branding-content h6 {
+  padding-bottom: 18px;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+}
+main .section-agency .block-branding-content a {
+  margin-top: 16px;
+}
+main .section-letstalk {
+  max-width: 1440px;
+  margin: auto;
+  position: relative;
+  position: relative;
+  padding: 64px 177px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .section-letstalk div {
+  width: 700px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+main .section-letstalk div h1 {
+  font-family: "Barlow", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 130%;
 }
 
 /*# sourceMappingURL=services.css.map */

@@ -6,14 +6,138 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: 'Inter', sans-serif;
 }
 
 main {
-  max-width: 1440px;
-  margin: auto;
-}
+  font-family: 'Inter', sans-serif;
+  color: $TX_DARK_COLOR;
 
-.section-intro {
-  background-color: red;
+  .section-agency {
+    max-width: 1440px;
+    margin: auto;
+    position: relative;
+    padding: 32px 177px;
+
+    h1 {
+      font-family: 'Barlow';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 64px;
+      line-height: 120%;
+    }
+
+    p {
+      width: 527px;
+      padding: 32px 0px;
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 150%;
+    }
+
+    .block-branding {
+      padding: 40px 0;
+      position: relative;
+      display: flex;
+      flex-direction: row;
+
+      &-graph {
+        width: 380px;
+        height: 545px;
+        margin-right: 70px;
+
+        img:nth-child(2) {
+          position: absolute;
+          top: 360px;
+          left: 87px;
+        }
+      }
+
+      &-graph-right {
+        width: 380px;
+        height: 545px;
+        margin-right: 70px;
+
+        img:nth-child(1) {
+          position: relative;
+          z-index: 2;
+        }
+
+        img:nth-child(2) {
+          position: absolute;
+          top: 410px;
+          left: 540px;
+          z-index: 1;
+        }
+      }
+
+      &-content {
+        // height: 472px;
+        display: flex;
+        flex-direction: column;
+        // justify-content: space-between;
+        align-items: start;
+
+        h1 {
+          font-family: 'Barlow';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 44px;
+          line-height: 130%;
+          color: $PRIMARY_COLOR;
+        }
+
+        p {
+          padding: 26px 0 60px 0;
+          font-family: 'Inter';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 150%;
+        }
+
+        h6 {
+          padding-bottom: 18px;
+          font-family: 'Barlow';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 150%;
+        }
+
+        a {
+          margin-top: 16px;
+        }
+      }
+    }
+  }
+
+  .section-letstalk {
+    max-width: 1440px;
+    margin: auto;
+
+    position: relative;
+    position: relative;
+    padding: 64px 177px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    div {
+      width: 700px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      h1 {
+        font-family: 'Barlow', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 44px;
+        line-height: 130%;
+      }
+    }
+  }
 }

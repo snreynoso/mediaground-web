@@ -22,11 +22,13 @@ main {
     flex-direction: column;
 
     &-title {
-      font-family: 'Barlow';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 64px;
-      line-height: 120%;
+      h1 {
+        font-family: 'Barlow', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 150%;
+      }
     }
 
     &-imgs {
@@ -106,20 +108,17 @@ main {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: auto;
-      grid-template-areas: 
-      "ow21 ow21 ow22" 
-      "ow21 ow21 ow23"
-      "ow24 ow24 ow24";
+      grid-template-areas: "ow21 ow21 ow22" "ow21 ow21 ow23" "ow24 ow24 ow24";
       gap: 24px;
 
       .ow21 {
         grid-area: ow21;
       }
-      
+
       .ow22 {
         grid-area: ow22;
       }
-      
+
       .ow23 {
         grid-area: ow23;
       }
@@ -134,7 +133,7 @@ main {
     }
   }
 
-  .section-testimonial{
+  .section-testimonial {
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -289,12 +289,12 @@ main .section-ourprojects {
   display: flex;
   flex-direction: column;
 }
-main .section-ourprojects-title {
-  font-family: "Barlow";
+main .section-ourprojects-title h1 {
+  font-family: "Barlow", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 64px;
-  line-height: 120%;
+  line-height: 150%;
 }
 main .section-ourprojects-imgs {
   align-self: center;

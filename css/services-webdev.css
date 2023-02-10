@@ -318,55 +318,108 @@ main {
   font-family: "Inter", sans-serif;
   color: #232326;
 }
-main .section-team {
+main .section-intro {
+  position: relative;
   max-width: 1440px;
   margin: auto;
   position: relative;
   padding: 32px 177px;
 }
-main .section-team-intro h1 {
+main .section-intro-title h1 {
   font-family: "Barlow";
   font-style: normal;
   font-weight: 700;
   font-size: 64px;
   line-height: 120%;
-  color: #302B76;
 }
-main .section-team-intro p {
-  max-width: 640px;
-  font-family: "Inter";
+main .section-intro-title p {
+  padding: 34px 0px;
+  width: 527px;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 150%;
-  padding: 30px 0px;
 }
-main .section-team-imgs {
+main .section-intro-content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  flex-wrap: wrap;
-  row-gap: 60px;
 }
-main .section-team-imgs-card {
+main .section-intro-content-p {
+  width: 658px;
+  min-height: 470px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  row-gap: 16px;
+  justify-content: space-between;
 }
-main .section-team-imgs-card h5 {
+main .section-intro-content-p div h3 {
   font-family: "Barlow";
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
   line-height: 140%;
 }
-main .section-team-imgs-card h6 {
+main .section-intro-content-p div p {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 150%;
 }
+main .section-intro-content-img {
+  position: relative;
+  width: 416px;
+  height: 538px;
+  margin-left: 46px;
+}
+main .section-intro-content-img img {
+  position: absolute;
+  box-shadow: 0px 1px 8px rgba(110, 110, 110, 0.1);
+}
+main .section-intro-content-img img:nth-child(1) {
+  right: 0;
+  top: 0;
+}
+main .section-intro-content-img img:nth-child(2) {
+  left: 0;
+  bottom: 0;
+}
+main .section-case {
+  position: relative;
+  max-width: 1440px;
+  margin: auto;
+  padding: 32px 177px;
+  display: flex;
+  flex-direction: column;
+}
+main .section-case-content {
+  text-align: center;
+}
+main .section-case-content h2 {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 130%;
+}
+main .section-case-content p {
+  padding: 20px 0px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+}
+main .section-case-imgs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0px;
+}
+main .section-testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-/*# sourceMappingURL=about.css.map */
+/*# sourceMappingURL=services-webdev.css.map */

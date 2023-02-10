@@ -63,6 +63,7 @@
 }
 
 .btn-primary {
+  text-decoration: none;
   background-color: #302B76;
   color: #FFFFFF;
   padding: 27px 37px !important;
@@ -72,6 +73,7 @@
 }
 
 .btn-secondary {
+  text-decoration: none;
   background-color: transparent;
   color: #232326;
   padding: 27px 37px !important;
@@ -81,6 +83,7 @@
 }
 
 .btn-dark {
+  text-decoration: none;
   background-color: #232326;
   color: #FFFFFF;
   padding: 22px 25px !important;
@@ -135,6 +138,7 @@
   font-size: 16px;
   line-height: 150%;
   color: #FFFFFF;
+  text-decoration: none;
 }
 
 header {
@@ -168,6 +172,7 @@ header .navbar .logo a {
   font-family: "Barlow", sans-serif;
   font-size: 40px;
   font-weight: 700;
+  text-decoration: none;
 }
 header .navbar-menu {
   display: flex;
@@ -175,6 +180,9 @@ header .navbar-menu {
   align-items: center;
   justify-content: space-between;
   gap: 8px;
+}
+header .navbar-menu a {
+  text-decoration: none;
 }
 header .navbar-menu a:nth-child(-n+3) {
   padding: 12px 16px;
@@ -304,17 +312,115 @@ header .navbar-menu a:nth-child(4) {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-decoration: none;
-  font-family: "Inter", sans-serif;
 }
 
 main {
+  font-family: "Inter", sans-serif;
+  color: #232326;
+}
+main .section-ourprojects {
+  position: relative;
   max-width: 1440px;
   margin: auto;
+  padding: 32px 177px;
+  display: flex;
+  flex-direction: column;
 }
-
-.section-intro {
-  background-color: red;
+main .section-ourprojects-title h1 {
+  font-family: "Barlow", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 150%;
+}
+main .section-ourprojects-imgs {
+  width: fit-content;
+  padding: 50px 0px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "ow1 ow2 ow3 ow4" "ow1 ow5 ow6 ow7";
+  gap: 24px;
+}
+main .section-ourprojects-imgs .ow1 {
+  grid-area: ow1;
+}
+main .section-ourprojects-imgs img {
+  place-self: center;
+}
+main .section-select {
+  position: relative;
+  max-width: 1440px;
+  margin: auto;
+  padding: 32px 177px;
+}
+main .section-select-block {
+  height: 325px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+main .section-select-block-dropdown {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 130%;
+}
+main .section-select-block-btns {
+  width: 384px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+main .section-select-block-btns a {
+  padding: 12px 20px;
+  gap: 4.7px;
+  background: #f6f3ff;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+  border-radius: 23.5191px;
+  text-decoration: none;
+}
+main .section-select-block-p {
+  width: 862px;
+  text-align: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+}
+main .section-select-imgs {
+  align-self: center;
+  width: fit-content;
+  padding: 50px 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "ow21 ow21 ow22" "ow21 ow21 ow23" "ow24 ow24 ow24";
+  gap: 24px;
+}
+main .section-select-imgs .ow21 {
+  grid-area: ow21;
+}
+main .section-select-imgs .ow22 {
+  grid-area: ow22;
+}
+main .section-select-imgs .ow23 {
+  grid-area: ow23;
+}
+main .section-select-imgs .ow24 {
+  grid-area: ow24;
+}
+main .section-select-imgs img {
+  width: 100%;
+  place-self: center;
+}
+main .section-testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /*# sourceMappingURL=our-work.css.map */

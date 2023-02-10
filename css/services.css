@@ -138,7 +138,8 @@
 }
 
 .navbar {
-  padding: 60px 55px 60px 70px;
+  padding: 0px 55px;
+  height: 185px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -270,6 +271,30 @@
   line-height: 150%;
 }
 
+.section-letstalk {
+  max-width: 1440px;
+  margin: auto;
+  position: relative;
+  position: relative;
+  padding: 64px 177px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section-letstalk div {
+  width: 700px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.section-letstalk div h1 {
+  font-family: "Barlow", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 130%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -365,29 +390,6 @@ main .section-agency .block-branding-content h6 {
 }
 main .section-agency .block-branding-content a {
   margin-top: 16px;
-}
-main .section-letstalk {
-  max-width: 1440px;
-  margin: auto;
-  position: relative;
-  position: relative;
-  padding: 64px 177px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-main .section-letstalk div {
-  width: 700px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-main .section-letstalk div h1 {
-  font-family: "Barlow", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 44px;
-  line-height: 130%;
 }
 
 /*# sourceMappingURL=services.css.map */

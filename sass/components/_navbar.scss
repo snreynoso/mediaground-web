@@ -1,7 +1,8 @@
 @use '../abstracts/colors' as *;
 
 .navbar {
-  padding: 60px 55px 60px 70px;
+  padding: 0px 55px;
+  height: 185px;
   display: flex;
   flex-direction: row;
   align-items: center;

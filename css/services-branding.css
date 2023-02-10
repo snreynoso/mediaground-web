@@ -306,79 +306,100 @@ main {
   font-family: "Inter", sans-serif;
   color: #232326;
 }
-main .section-ourprojects {
+main .section-intro {
   position: relative;
   max-width: 1440px;
   margin: auto;
-  padding: 32px 177px;
-  display: flex;
-  flex-direction: column;
-}
-main .section-ourprojects-title h1 {
-  font-family: "Barlow", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 64px;
-  line-height: 150%;
-}
-main .section-ourprojects-imgs {
-  width: fit-content;
-  padding: 50px 0px;
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  grid-template-areas: "ow1 ow2 ow3 ow4" "ow1 ow5 ow6 ow7";
-  gap: 24px;
-}
-main .section-ourprojects-imgs .ow1 {
-  grid-area: ow1;
-}
-main .section-ourprojects-imgs img {
-  place-self: center;
-}
-main .section-select {
   position: relative;
-  max-width: 1440px;
-  margin: auto;
   padding: 32px 177px;
 }
-main .section-select-block {
-  height: 325px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-main .section-select-block-dropdown {
+main .section-intro-title h1 {
   font-family: "Barlow";
   font-style: normal;
   font-weight: 700;
-  font-size: 44px;
-  line-height: 130%;
+  font-size: 64px;
+  line-height: 120%;
+  color: #302B76;
 }
-main .section-select-block-btns {
-  width: 384px;
+main .section-intro-title p {
+  padding: 34px 0px;
+  width: 527px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+}
+main .section-intro-content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-main .section-select-block-btns a {
-  padding: 12px 20px;
-  gap: 4.7px;
-  background: #f6f3ff;
-  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
-  border-radius: 23.5191px;
+main .section-intro-content-p {
+  width: 658px;
+  min-height: 470px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-main .section-select-block-p {
-  width: 862px;
-  text-align: center;
+main .section-intro-content-p div h3 {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+}
+main .section-intro-content-p div p {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 150%;
 }
-main .section-select-imgs {
+main .section-intro-content-img {
+  position: relative;
+  width: 416px;
+  height: 538px;
+  margin-left: 46px;
+}
+main .section-intro-content-img img {
+  position: absolute;
+  box-shadow: 0px 1px 8px rgba(110, 110, 110, 0.1);
+}
+main .section-intro-content-img img:nth-child(1) {
+  right: 0;
+  top: 0;
+}
+main .section-intro-content-img img:nth-child(2) {
+  left: 0;
+  bottom: 0;
+}
+main .section-case {
+  position: relative;
+  max-width: 1440px;
+  margin: auto;
+  padding: 32px 177px;
+  display: flex;
+  flex-direction: column;
+}
+main .section-case-content {
+  text-align: center;
+}
+main .section-case-content h2 {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 130%;
+}
+main .section-case-content p {
+  padding: 20px 0px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+}
+main .section-case-imgs {
   align-self: center;
   width: fit-content;
   padding: 50px 0px;
@@ -388,19 +409,19 @@ main .section-select-imgs {
   grid-template-areas: "ow21 ow21 ow22" "ow21 ow21 ow23" "ow24 ow24 ow24";
   gap: 24px;
 }
-main .section-select-imgs .ow21 {
+main .section-case-imgs .ow21 {
   grid-area: ow21;
 }
-main .section-select-imgs .ow22 {
+main .section-case-imgs .ow22 {
   grid-area: ow22;
 }
-main .section-select-imgs .ow23 {
+main .section-case-imgs .ow23 {
   grid-area: ow23;
 }
-main .section-select-imgs .ow24 {
+main .section-case-imgs .ow24 {
   grid-area: ow24;
 }
-main .section-select-imgs img {
+main .section-case-imgs img {
   width: 100%;
   place-self: center;
 }
@@ -410,4 +431,4 @@ main .section-testimonial {
   align-items: center;
 }
 
-/*# sourceMappingURL=about.css.map */
+/*# sourceMappingURL=services-branding.css.map */

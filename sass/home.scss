@@ -153,13 +153,14 @@ main {
   }
 
   .section-client-carousel {
-    // max-width: 1440px;
-    // margin: auto;
-
     position: relative;
-    width: 100%;
+    max-width: 1440px;
+    margin: auto;
     overflow: hidden;
-    // padding: 16px 0px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .section-fullservices {

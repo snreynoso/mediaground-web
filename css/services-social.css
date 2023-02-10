@@ -311,90 +311,108 @@ main {
   font-family: "Inter", sans-serif;
   color: #232326;
 }
-main .section-agency {
+main .section-intro {
+  position: relative;
   max-width: 1440px;
   margin: auto;
   position: relative;
   padding: 32px 177px;
 }
-main .section-agency h1 {
+main .section-intro-title h1 {
   font-family: "Barlow";
   font-style: normal;
   font-weight: 700;
   font-size: 64px;
   line-height: 120%;
 }
-main .section-agency p {
+main .section-intro-title p {
+  padding: 34px 0px;
   width: 527px;
-  padding: 32px 0px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+}
+main .section-intro-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+main .section-intro-content-p {
+  width: 658px;
+  min-height: 470px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .section-intro-content-p div h3 {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+}
+main .section-intro-content-p div p {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 150%;
 }
-main .section-agency .block-cases {
-  padding: 40px 0;
+main .section-intro-content-img {
   position: relative;
-  display: flex;
-  flex-direction: row;
+  width: 416px;
+  height: 538px;
+  margin-left: 46px;
 }
-main .section-agency .block-cases-graph {
-  width: 380px;
-  height: 545px;
-  margin-right: 70px;
-}
-main .section-agency .block-cases-graph img:nth-child(2) {
+main .section-intro-content-img img {
   position: absolute;
-  top: 360px;
-  left: 87px;
+  box-shadow: 0px 1px 8px rgba(110, 110, 110, 0.1);
 }
-main .section-agency .block-cases-graph-right {
-  width: 380px;
-  height: 545px;
-  margin-right: 70px;
+main .section-intro-content-img img:nth-child(1) {
+  right: 0;
+  top: 0;
 }
-main .section-agency .block-cases-graph-right img:nth-child(1) {
+main .section-intro-content-img img:nth-child(2) {
+  left: 0;
+  bottom: 0;
+}
+main .section-case {
   position: relative;
-  z-index: 2;
-}
-main .section-agency .block-cases-graph-right img:nth-child(2) {
-  position: absolute;
-  top: 410px;
-  left: 540px;
-  z-index: 1;
-}
-main .section-agency .block-cases-content {
+  max-width: 1440px;
+  margin: auto;
+  padding: 32px 177px;
   display: flex;
   flex-direction: column;
-  align-items: start;
 }
-main .section-agency .block-cases-content h1 {
+main .section-case-content {
+  text-align: center;
+}
+main .section-case-content h2 {
   font-family: "Barlow";
   font-style: normal;
   font-weight: 700;
   font-size: 44px;
   line-height: 130%;
-  color: #302B76;
 }
-main .section-agency .block-cases-content p {
-  padding: 26px 0 60px 0;
+main .section-case-content p {
+  padding: 20px 0px;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 150%;
 }
-main .section-agency .block-cases-content h6 {
-  padding-bottom: 18px;
-  font-family: "Barlow";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 150%;
+main .section-case-imgs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0px;
 }
-main .section-agency .block-cases-content a {
-  margin-top: 16px;
+main .section-testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/*# sourceMappingURL=services.css.map */
+/*# sourceMappingURL=services-social.css.map */

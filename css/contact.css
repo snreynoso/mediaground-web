@@ -351,7 +351,6 @@ main .section-content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
 }
 main .section-content-logos {
   position: relative;
@@ -389,6 +388,53 @@ main .section-content-logos-msg a {
 }
 main .section-content-logos-coffe a {
   background-image: url("../assets//icons/icon-mug.png");
+}
+main .section-content-form {
+  position: relative;
+  width: 620px;
+  padding: 40px 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "inp01 inp02" "inp03 inp04" "msg msg" "submit submit";
+  gap: 16px;
+}
+main .section-content-form input {
+  height: 60px;
+}
+main .section-content-form input, main .section-content-form textarea {
+  font-family: "Inter";
+  padding: 18px 30px;
+  border: 1px solid #d1d1d1;
+  border-radius: 20px;
+}
+main .section-content-form textarea {
+  background-color: #F1F1F5;
+  resize: none;
+}
+main .section-content-form .msg {
+  grid-area: msg;
+}
+main .section-content-form .submit {
+  padding-top: 50px;
+  grid-area: submit;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+main .section-content-form .submit div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+main .section-content-form .submit div img {
+  width: 40px;
+  height: 40px;
+}
+main .section-content-form .submit div p {
+  padding-left: 15px;
 }
 
 /*# sourceMappingURL=contact.css.map */

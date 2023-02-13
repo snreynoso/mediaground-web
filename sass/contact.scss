@@ -49,14 +49,13 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
 
     &-logos {
       position: relative;
       width: 470px;
       display: flex;
       flex-direction: column;
-      justify-content: space-evenly;
+      justify-content:space-evenly;
       align-items: start;
 
       & div {
@@ -94,6 +93,63 @@ main {
       &-coffe {
         a {
           background-image: url('../assets//icons/icon-mug.png');
+        }
+      }
+    }
+
+    &-form {
+      position: relative;
+      width: 620px;
+      padding: 40px 0px;
+
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+      grid-template-areas: "inp01 inp02" "inp03 inp04" "msg msg" "submit submit";
+      gap: 16px;
+
+      input {
+        height: 60px;
+      }
+      
+      input, textarea {
+        font-family: 'Inter';;
+        padding: 18px 30px;
+        border: 1px solid #d1d1d1;
+        border-radius: 20px;
+      }
+
+      textarea {
+        background-color: #F1F1F5;
+        resize: none;
+      }
+
+      .msg {
+        grid-area: msg;
+      }
+
+      .submit {
+        padding-top: 50px;
+        grid-area: submit;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        div {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+
+          img {
+            width: 40px;
+            height: 40px;
+          }
+
+          p {
+            padding-left: 15px;
+          }
         }
       }
     }
